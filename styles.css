@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 .work-sans-font {
     font-family: "Quicksand", sans-serif;
     font-optical-sizing: auto;
@@ -288,16 +287,28 @@
     background-color: #e68a00;
 }
 
+.bgsec {
+    background-image: url("assets/bg.png"), linear-gradient(360deg, #f8e6c5 0%, #ffffff 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 120%;
+    height: auto;
+}
+
+.bgsec h2 {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
 .stories-section {
     display: grid;
     grid-template-areas:
-        "story-1 story-2 story-3"
-        "story-1 story-4 story-5";
-    gap: 20px;
-    background-image: url("assets/bg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 50px;
+        "story-1 story-1 story-2 story-3"
+        "story-1 story-1 story-4 story-5";
+    gap: 1.2rem;
+    padding: 3.1rem;
     width: 80%;
     margin: 0 auto;
 }
@@ -309,29 +320,102 @@
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100%;
 }
 
 .story img {
     width: 100%;
     height: 50%;
-    object-fit: cover;
+    object-fit: fill;
 }
 
 .content {
-    padding: 20px;
+    padding: 1.5rem;
     flex: 1;
 }
 
-.date {
+.date1 {
     display: inline-block;
     margin-top: -20px;
     margin-left: auto;
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    padding: 5px 10px;
-    border-radius: 3px;
+    background: #3cd8e8;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 3.1rem;
     position: relative;
-    top: -20px;
+    top: -2rem;
+    left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.date2 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: auto;
+    background: #95b226;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 3.1rem;
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.date3 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: auto;
+    background: #5d58f0;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 3.1rem;
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.date4 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: auto;
+    background: #95b226;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 3.1rem;
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+
+.date5 {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: auto;
+    background: #95b226;
+    color: white;
+    padding: 0.7rem 1.2rem;
+    border-radius: 3.1rem;
+    position: relative;
+    top: -2rem;
+    left: 1rem;
+    font-family: "Raleway", sans-serif;
+}
+.content h3 {
+    font-weight: bold;
+    margin-left: 1.2rem;
+    margin-top: 1.2rem;
+}
+
+.content p {
+    margin-top: 4rem;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    line-height: 1.7;
+    font-family: "Raleway", sans-serif;
+    color: #666666;
 }
 
 .story-1 {
@@ -354,6 +438,102 @@
     grid-area: story-5;
 }
 
+.va {
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0.7rem 3.1rem;
+    border: none;
+    border-radius: 0.6rem;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition:
+        background-color 0.3s ease,
+        transform 0.2s ease;
+    margin-left: 43rem;
+    margin-bottom: 4rem;
+}
+
+.va:hover {
+    background-color: #333;
+    transform: translateY(-2px);
+}
+.foot {
+    background-color: #01acfd;
+    color: white;
+    height: 24rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.logo-with-text {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 0.7rem;
+}
+
+.logo-background {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 50%;
+}
+
+.logo-background img {
+    width: 4.5rem;
+    height: auto;
+}
+
+.logo-section h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.logo-section p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.about-school h2,
+.social-media h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.1rem;
+}
+
+.about-school ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-school ul li {
+    margin: 1rem 0;
+    font-size: 1rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.social-icons img {
+    width: 2rem;
+    height: 2rem;
+}
 
 @media screen and (max-width: 576px) {
     .nav {
@@ -462,5 +642,55 @@
         text-align: justify;
         text-align-last: center;
         margin: 0 0;
+    }
+
+    .bgsec {
+        overflow: hidden;
+    }
+
+    .content {
+        padding: 0.3rem;
+    }
+    .content h3 {
+        font-size: 0.9rem;
+        margin: 1rem 1rem;
+    }
+
+    .story-1 {
+        display: none;
+    }
+    .story img {
+        width: 100%;
+        height: 100%;
+        object-fit: fill;
+    }
+
+    .date1,
+    .date2,
+    .date3,
+    .date4,
+    .date5 {
+        font-size: 0.6rem;
+        padding: 0.5rem 1rem;
+        top: -1.2rem;
+        left: 1rem;
+    }
+    .stories-section {
+        grid-template-areas:
+            "story-2 story-3"
+            "story-4 story-5";
+        width: 80%;
+    }
+
+    .va {
+        margin-left: 10rem;
+    }
+
+    .foot {
+        height: 40rem;
+    }
+
+    .main-container {
+        grid-template-columns: 1fr;
     }
 }
