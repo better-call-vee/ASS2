@@ -1,0 +1,466 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+.work-sans-font {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.one {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.sc {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo.ig {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.nav a.h {
+    color: #fea301;
+    font-weight: bold;
+}
+
+.nav a.ab {
+    color: #01a5f2;
+    font-weight: 600;
+}
+
+.nav a.fac {
+    color: #05d4df;
+    font-weight: 600;
+}
+
+.nav a.add {
+    color: #5d58ef;
+    font-weight: 600;
+}
+
+.nav a:hover {
+    color: #007bff;
+}
+
+.contact button {
+    background-color: #ff9800;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.contact button:hover {
+    background-color: #e68a00;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 10%;
+    background-color: #ffffff;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+.cta-button {
+    background-color: #000;
+    color: #fff;
+    padding: 0.75rem 2.6rem;
+    border: none;
+    border-radius: 0.75rem;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.cta-button:hover {
+    background-color: #444;
+}
+
+.highlight {
+    color: #fea301;
+}
+
+.highlight-blue {
+    color: #01a5f2;
+}
+
+.hero-image {
+    max-width: 45%;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 50px;
+}
+
+.curriculum {
+    position: relative;
+    overflow: auto;
+    padding: 50px 10%;
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("assets/bg.png") no-repeat;
+    background-size: 90% 100%;
+    background-position: -50px center;
+    z-index: -1;
+}
+
+.curriculum-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+.cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.card {
+    border-radius: 15px;
+    padding: 20px;
+    flex: 1;
+    max-width: 30%;
+    text-align: justify;
+    text-align-last: center;
+    margin: 0 auto;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(180deg, #def5ff 0%, #ffffff 30%, #ffffff 100%);
+    box-shadow:
+        0 2px 4px rgba(222, 245, 255, 0.4),
+        0 0 0 1px #def5ff;
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(180deg, #fff4dc 0%, #ffffff 30%, #ffffff 100%);
+    box-shadow:
+        0 2px 4px rgba(255, 244, 220, 0.4),
+        0 0 0 1px #fff4dc;
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(180deg, #f2e8ff 0%, #ffffff 30%, #ffffff 100%);
+    box-shadow:
+        0 2px 4px rgba(242, 232, 255, 0.4),
+        0 0 0 1px #f2e8ff;
+}
+
+.card-image img {
+    width: 25%;
+    margin-bottom: 1.2rem;
+    margin-top: 3rem;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.card .r1 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #64c8ff;
+    text-decoration: none;
+}
+
+.card .r2 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f0aa00;
+    text-decoration: none;
+}
+
+.card .r3 {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #8700ff;
+    text-decoration: none;
+}
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.7rem;
+    gap: 0.7rem;
+}
+
+.carousel-control {
+    width: 3rem;
+    height: 3rem;
+    background-color: #ff9800;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+    font-family: "Quicksand", sans-serif;
+}
+
+.carousel-control:hover {
+    background-color: #e68a00;
+}
+
+.stories-section {
+    display: grid;
+    grid-template-areas:
+        "story-1 story-2 story-3"
+        "story-1 story-4 story-5";
+    gap: 20px;
+    background-image: url("assets/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 50px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.story img {
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.content {
+    padding: 20px;
+    flex: 1;
+}
+
+.date {
+    display: inline-block;
+    margin-top: -20px;
+    margin-left: auto;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 3px;
+    position: relative;
+    top: -20px;
+}
+
+.story-1 {
+    grid-area: story-1;
+}
+
+.story-2 {
+    grid-area: story-2;
+}
+
+.story-3 {
+    grid-area: story-3;
+}
+
+.story-4 {
+    grid-area: story-4;
+}
+
+.story-5 {
+    grid-area: story-5;
+}
+
+
+@media screen and (max-width: 576px) {
+    .nav {
+        display: none;
+    }
+
+    .sc {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .logo {
+        justify-content: flex-start;
+    }
+
+    .hamburger {
+        display: flex;
+        justify-content: flex-end;
+        margin-left: auto;
+    }
+
+    .one {
+        border-bottom: 2px solid #fea301;
+        max-width: 100%;
+    }
+
+    .hero {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .hero-image img {
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .hero-text {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .hero-text h1 {
+        font-size: 2rem;
+        line-height: 1.3;
+    }
+
+    .hero-text p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
+    .cta-button {
+        margin: 20px auto 0;
+        display: block;
+    }
+    .curriculum {
+        position: relative;
+        min-height: 300px;
+        overflow: hidden;
+    }
+
+    .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: contain;
+        background-repeat: repeat;
+        background-position: center right;
+        z-index: -1;
+    }
+
+    .cards {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .carousel-controls {
+        display: none;
+    }
+
+    .card h3 {
+        margin-bottom: 0rem;
+    }
+
+    .card p {
+        font-size: 0.7rem;
+        color: #666;
+        line-height: 1.6;
+        padding: 2rem 2rem;
+        text-align: justify;
+        text-align-last: center;
+        margin: 0 0;
+    }
+}
