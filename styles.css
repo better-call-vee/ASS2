@@ -437,6 +437,11 @@
 .story-5 {
     grid-area: story-5;
 }
+.emni {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 .va {
     background-color: #000;
@@ -451,7 +456,6 @@
     transition:
         background-color 0.3s ease,
         transform 0.2s ease;
-    margin-left: 43rem;
     margin-bottom: 4rem;
 }
 
@@ -680,10 +684,6 @@
             "story-2 story-3"
             "story-4 story-5";
         width: 80%;
-    }
-
-    .va {
-        margin-left: 10rem;
     }
 
     .foot {
