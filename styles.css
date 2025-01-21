@@ -539,6 +539,21 @@
     height: 2rem;
 }
 
+.announcement {
+    background-color: #f0f8ff;
+    padding: 0.7rem 0;
+    border-top: 0.08rem solid #fea301;
+    border-bottom: 0.08rem solid #fea301;
+    text-align: center;
+}
+
+.announcement marquee {
+    font-size: 1.2em;
+    color: #007bff;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
 @media screen and (max-width: 576px) {
     .nav {
         display: none;
